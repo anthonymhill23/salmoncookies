@@ -205,30 +205,3 @@ paris.render = function () {
   total.textContent = `Total: ${this.totalCookies} cookies`;
   ulElem.appendChild(total);
 };
-
-lima.render = function () {
-  let h2Elem = document.createElement('h2');
-  h2Elem.textContent = lima.location;
-  cookieList.appendChild(h2Elem);
-
-  let ulElem = document.createElement('ul');
-  cookieList.appendChild(ulElem);
-  lima.getCustPerHour();
-  lima.getCookiesSoldPerHour();
-  lima.getTotalCookies();
-  for (let i = 0; i < storeHours.length; i++) {
-    let liElem = document.createElement('li');
-    liElem.textContent = `${storeHours[i]}: ${this.cookiesSoldPerHour[i]} cookies`;
-    ulElem.appendChild(liElem);
-  }
-  let total = document.createElement('li');
-  total.textContent = `Total: ${this.totalCookies} cookies`;
-  ulElem.appendChild(total);
-};
-
-
-seattle.render();
-tokyo.render();
-dubai.render();
-paris.render();
-lima.render();
