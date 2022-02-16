@@ -1,4 +1,27 @@
-'let seattle' = {
+'use strict';
+
+let cookieList = document.getElementById("cookieList");
+
+let storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
+
+function randPerHour(min, max) {
+  return Math.floor(Math.random)()*(max - min + 1) + min();
+}
+
+function cookiesPerHour(custPerHour, aveCookiePer) {
+  let cookiesPerHour = custPerHour * aveCookiePer;
+  return cookiesPerHour;
+}
+
+// object stores the min/max hourly customers, and the average cookies per customer as properties.
+
+/*
+Calculate and store the simulated amounts of cookies purchased for each hour at each location using average cookies purchased and the random number of customers generated
+i.e create let cookies purchased function that gives the product of custperhour * aveCookiePer DONE
+create a function that makes a create a function that calculates the cookies per hour off of the properties inside each object. And iterates through, for each time slot, than totals the number of cookies. This can use a counter for the hours, and after the counter hits a certain number it should total them. Then add that to the array
+*/
+
+let seattle = {
   location: 'Seattle',
   minCustHourly: 23,
   maxCustHourly: 65,
@@ -205,3 +228,30 @@ paris.render = function () {
   total.textContent = `Total: ${this.totalCookies} cookies`;
   ulElem.appendChild(total);
 };
+
+lima.render = function () {
+  let h2Elem = document.createElement('h2');
+  h2Elem.textContent = lima.location;
+  cookieList.appendChild(h2Elem);
+
+  let ulElem = document.createElement('ul');
+  cookieList.appendChild(ulElem);
+  lima.getCustPerHour();
+  lima.getCookiesSoldPerHour();
+  lima.getTotalCookies();
+  for (let i = 0; i < storeHours.length; i++) {
+    let liElem = document.createElement('li');
+    liElem.textContent = `${storeHours[i]}: ${this.cookiesSoldPerHour[i]} cookies`;
+    ulElem.appendChild(liElem);
+  }
+  let total = document.createElement('li');
+  total.textContent = `Total: ${this.totalCookies} cookies`;
+  ulElem.appendChild(total);
+};
+
+
+seattle.render();
+tokyo.render();
+dubai.render();
+paris.render();
+lima.render();
