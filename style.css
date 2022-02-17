@@ -1,9 +1,9 @@
-cookie-stand/css/sales.css
+cookie-stand/sales.css
 
 
 
 html body {
-  background-color: #0081A7;
+  background-color: #276375;
 }
 h1 {
   
@@ -28,7 +28,7 @@ table, th, td {
   border-style: solid;
   border-color: black;
   border-radius: 3px;
-  padding: 5px;
+
   text-align: center;
   width: 100%;
   font-size: 1em;
@@ -36,7 +36,7 @@ table, th, td {
 }
 
 table thead th {
-  background-color: #FED9B7;
+  background-color: #693504;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   vertical-align:middle;
@@ -58,7 +58,7 @@ table tbody tr td:not(:first-child){
   background-color: #FED9B7;
 }
 table tbody tr td:nth-child(even){
-  background-color: #caf0f8;
+  background-color: #284b52;
 }
 
 table tbody tr th{
