@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Supermercado+One&display=swap" rel="style.css"> 
-  <link href="./css/reset.css" rel="reset.css">
-  <link href="./css/sales.css" rel="styyle.css">
+
+
+  <link href="./css/reset.css" rel="stylesheet">
+  <link href="./css/sales.css" rel="stylesheet">
 
   <title>Salmon Cookie Sales</title>
 </head>
-<body>
-  <h1>Location Sales Data</h1>
-  <table id="sales.html"></table>
-</body>
-<script src="/app.js"></script>
+<header>
+  <nav>
+    <ul class="left">
+      <li><a href="./index.html">HOME</a></li>
+      <li><a href="#locations">LOCATIONS</a></li>
+    </ul>
+    <ul class="right">
+      <li><a href="#">CONTACT</a></li>
+      <li><a href="#">SALES</a></li>
+    </ul>
+  </nav>
+
+  <body>
+    <h1>Location Sales Data</h1>
+    <table id="sales"></table>
+  </body>
+  <script src="app.js"></script>
+
 </html>
