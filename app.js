@@ -137,3 +137,27 @@ function calcStoreSales() {
 }
 
   calcStoreSales();
+
+
+// code to add new stores... currently broken
+
+
+  let handleFormSubmit = function (event) {
+    event.preventDefault();
+  
+    let location = event.target.location.value;
+    let minHourlyCustomers = Number(event.target.minHourlyCustomers.value);
+    let maxHourlyCustomers = Number(event. target.maxHourlyCustomers.value);
+    let averageCookiesPerCustomer = Number(event.target.averageCookiesPerCustomer.value);
+    console.log (location, minHourlyCustomers, maxHourlyCustomers, averageCookiesPerCustomer);
+  
+    shops.push(new CookieShop(location, minHourlyCustomers, maxHourlyCustomers, averageCookiesPerCustomer));
+    console.log(shops);
+  
+    var footer = document.getElementById('footer');
+    salesListContainer.removeChild(footer);
+  
+    renderFooter(salesListContainer, true);
+    newShop.reset();
+  };
+  newShop.addEventListener('submit', handleFormSubmit);
