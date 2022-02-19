@@ -140,7 +140,7 @@ function calcStoreSales() {
 calcStoreSales();
 
 
-// code to add new stores... works now
+// code to add new stores... currently broken
 
 
 let handleFormSubmit = function (event) {
@@ -170,5 +170,4 @@ let handleFormSubmit = function (event) {
   //newShop.reset();
 };
 
-storeForm.addEventListener("submit", handleFormSubmit)
-
+let storeForm.addEventListener("submit", handleFormSubmit)

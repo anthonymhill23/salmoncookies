@@ -1,93 +1,112 @@
-
-
-
-
- body {
-  background-color: #276375;
-}
-h1 {
-  
-  font-family: 'Lato', sans-serif;
-  font-size: 3em;
-  background-color: peachpuff;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  margin: 0.75em;
-  border-radius: 20px;
-  color: blue;
-
-
-}
-
-table {
-  background-color: #f07167;
-}
-
-table, th, td {
-  border: 4px;
-  border-style: solid;
-  border-color: black;
-  border-radius: 3px;
-
-  text-align: center;
+html {
+  height: 100%;
   width: 100%;
-  font-size: 1em;
-  position: relative;
+  text-align: center;
 }
 
-table thead th {
-  background-color: #693504;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  vertical-align:middle;
-  word-wrap: break-word;
-
+* {
+  font-family: Verdana,  Tahoma, sans-serif;
 }
 
-table thead th:nth-child(even):not(:first-child) {
-  background-color: #caf0f8;
+body {
+  background-color: bisque;
 }
 
-
-table tbody tr td {
-  font-size: 1.2em;
-  font-family: 'Lato', sans-serif;
+h1 {
+  /* custom font */
+  font-family: 'Prosto One', cursive;
+  text-align: center;
+  font-size: 4vw;
 }
 
-table tbody tr td:not(:first-child){
-  background-color: #FED9B7;
-}
-table tbody tr td:nth-child(even){
-  background-color: #276375;
-}
-
-table tbody tr th{
-  background-color: #276375;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  font-size: 1.5em;
-}
-table tfoot tr td{
-  background-color: #FED9B7;
-  font-size: 1.2em;
-  font-family: 'Lato', sans-serif;
-  vertical-align:middle;
-  font-weight: bolder;
-}
-table tfoot tr td:nth-child(even){
-  background-color: #276375
-}
-table tfoot tr th{
-  background-color: #276375;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  font-size: 1.5em;
+nav {
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  color:#231, 236, 239 ;
 }
 
-
-main {
-
-
-  background-color: #276375;
+.nav-links {
+  display: inline-block;
+  line-height: 2em;
+  width: 20%;
 }
+
+a {
+  text-decoration: none;
+  font-family: 'Cookie', cursive;
+  color: salmon;
+  font-size: 5vh;
+}
+
+.intro-main {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.main-fish {
+  margin: 0 auto;
+  text-align: justify;
+  width: 95%;
+}
+
+.intro {
+  display: inline-block;
+  max-width: 50%;
+}
+
+/* .shop-awning {
+  margin-bottom: -20%;
+  margin-top: -13.5%;
+  width: 100%;
+} */
+
+.fish {
+  vertical-align: top;
+  width: 35%;
+  margin-right: 6%;
+}
+
+.shop-main {
+  display: inline-block;
+  margin-left: 10%;
+}
+
+.shop-pic {
+  border: 1px solid salmon;
+}
+
+figcaption {
+  font-size: 1vw;
+  text-align: center;
+}
+
+.location-headline {
+  font-family: 'Cookie', cursive;
+  text-align: center;
+  font-size: 4vw;
+  color: salmon;
+}
+.current-locations {
+  margin: 5%;
+}
+.col-container {
+  display: table;
+  width: 100%;
+}
+.col {
+  display: table-cell;
+  padding: 16px;
+  text-align: center;
+}
+
+.col1, .col3, .col5 {
+  background-color: orange;
+}
+
+.col2, .col4 {
+  background-color: yellow;
+}
+
+footer {
+  text-align: center;}

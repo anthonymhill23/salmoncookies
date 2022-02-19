@@ -1,0 +1,113 @@
+html {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+* {
+  font-family: Verdana,  Tahoma, sans-serif;
+}
+
+body {
+  background-color: bisque;
+}
+
+h1 {
+  /* custom font */
+  font-family: 'Prosto One', cursive;
+  text-align: center;
+  font-size: 4vw;
+}
+
+nav {
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  color:#231, 236, 239 ;
+}
+
+.nav-links {
+  display: inline-block;
+  line-height: 2em;
+  width: 20%;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Cookie', cursive;
+  color: salmon;
+  font-size: 5vh;
+}
+
+.intro-main {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.main-fish {
+  margin: 0 auto;
+  text-align: justify;
+  width: 95%;
+}
+
+.intro {
+  display: inline-block;
+  max-width: 50%;
+}
+
+/* .shop-awning {
+  margin-bottom: -20%;
+  margin-top: -13.5%;
+  width: 100%;
+} */
+
+.fish {
+  vertical-align: top;
+  width: 35%;
+  margin-right: 6%;
+}
+
+.shop-main {
+  display: inline-block;
+  margin-left: 10%;
+}
+
+.shop-pic {
+  border: 1px solid salmon;
+}
+
+figcaption {
+  font-size: 1vw;
+  text-align: center;
+}
+
+.location-headline {
+  font-family: 'Cookie', cursive;
+  text-align: center;
+  font-size: 4vw;
+  color: salmon;
+}
+.current-locations {
+  margin: 5%;
+}
+.col-container {
+  display: table;
+  width: 100%;
+}
+.col {
+  display: table-cell;
+  padding: 16px;
+  text-align: center;
+}
+
+.col1, .col3, .col5 {
+  background-color: orange;
+}
+
+.col2, .col4 {
+  background-color: yellow;
+}
+
+footer {
+}

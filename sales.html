@@ -2,14 +2,12 @@
 <html lang="en">
 
 <head>
+  <link href="./css/reset.css" rel="reset.css">
+  <link href="./css/sales.css" rel="sales.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
-
-  <link href="./css/reset.css" rel="stylesheet">
-  <link href="./css/sales.css" rel="stylesheet">
 
   <title>Salmon Cookie Sales</title>
 </head>
@@ -19,16 +17,52 @@
       <li><a href="./index.html">HOME</a></li>
       <li><a href="#locations">LOCATIONS</a></li>
     </ul>
-    <ul class="right">
+    <ul class="Contact">
       <li><a href="#">CONTACT</a></li>
-      <li><a href="#">SALES</a></li>
     </ul>
-  </nav>
+    <ul class="sales"></ul>
+    <li><a href="#">SALES</a></li>
+  </ul>
+</nav>
+<table id="sales"></table>
+<h1>Location Sales Data</h1>
 
   <body>
-    <h1>Location Sales Data</h1>
-    <table id="sales"></table>
-  </body>
-  <script src="app.js"></script>
+    
+
+    
+    <h1>Pat's Salmon Cookie Employee Portal</h1>
+    <div class="family-intro">
+      <img src="img/family.jpg" alt="family" class="family-pic">
+      <p class="family"></p>
+    </div>
+  </header>
+  <body>
+      <main class="main" id="main-content">
+        <h3>Add additional stores here:</h3>
+        <div id="new-store-form">
+          <form id="main-form">
+            <p>New store name:
+              <input name="name" type="text" required>
+            </p>
+            <p>Minimum number of customers per hour:
+              <input name="minCustomer" type="number" required>
+            </p>
+            <p>Maximum number of customers per hour:
+              <input name="maxCustomer" type="number" required>
+            </p>
+            <p>Average sales:
+              <input name="avgSales" type="number" required step="0.1">
+            </p>
+            <button type="submit">submit</button>
+          </form>
+          <table id="total-row">
+        </div>
+      </main>
+      <footer>
+        <img src="img/chinook.jpg" class="fish chinook-pic" alt="chinook fish" />
+      </footer>
+    </body>
+    <script src="app.js"></script>
 
 </html>
